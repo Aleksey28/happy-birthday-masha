@@ -14,7 +14,7 @@ import accompaniment from '../../../sounds/track-task-5.mp3';
 import { useRef } from 'react';
 
 const headerProps = {
-  title: 'Задание №6',
+  title: 'Задание №5',
   description: 'Настоящий волейболист поймает все 23 мяча!',
 }
 
@@ -68,8 +68,8 @@ function Task() {
         top: getRandomArbitrary(bounds.top + 1, bounds.bottom - ballSize.height - 1),
         left: getRandomArbitrary(bounds.left + 1, bounds.right - ballSize.width - 1),
         angle: getRandomArbitrary(10, 80),
-        speed: getRandomArbitrary(1, 3),
-        step: getRandomArbitrary(1, 3)
+        speed: getRandomArbitrary(1, 2),
+        step: getRandomArbitrary(2, 3)
       });
     }
 
