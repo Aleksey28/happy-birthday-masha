@@ -1,0 +1,42 @@
+.task {
+  display: flex;
+  justify-content: space-between;
+}
+
+.corgi {
+  width: 1000px;
+  height: 692px;
+  border: none;
+  border-radius: 30px;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+}
+
+.resultTitle {
+  margin: 0 0 50px;
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 153.18%;
+  max-width: 493px;
+  color: #B6018E;
+}
+
+.resultInput {
+  width: 277.59px;
+  height: 70px;
+  background: rgba(217, 217, 217, 0.42);
+  border: 1px solid #B6018E;
+  border-radius: 35px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 154.9%;
+  color: #242424;
+  text-align: center;
+}
