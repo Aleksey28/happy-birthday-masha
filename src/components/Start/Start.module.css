@@ -12,6 +12,7 @@
   height: 320px;
   width: 992px;
   max-width: 80%;
+  margin-top: -40px;
 }
 
 .happyBirthday {
@@ -22,15 +23,15 @@
   letter-spacing: 0em;
   text-align: center;
   color: #B6018E;
-  margin: 0;
-  transform: translateY(-34px);
+  margin: -20px 0 0;
+  transform: translateY(-40px);
 }
 
 .masha {
   width: 1024px;
   height: 501px;
   max-width: 90%;
-  margin: 0 0 41px;
+  margin: 0 0 20px;
 }
 
 .day {
@@ -40,7 +41,7 @@
   font-size: 24px;
   line-height: 153.18%;
   color: #B6018E;
-  margin: 0 0 17px;
+  margin: 0 0 10px;
 }
 
 .bestDay {
