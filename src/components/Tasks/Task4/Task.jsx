@@ -12,7 +12,6 @@ import song from './images/song.mp3';
 import Popup from '../Popup/Popup';
 import { useNavigate } from 'react-router-dom';
 import { useRef, useState } from 'react';
-import Heart from '../../Heart/Heart';
 
 const headerProps = {
   title: 'Задание №4',
