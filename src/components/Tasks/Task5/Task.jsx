@@ -68,8 +68,8 @@ function Task() {
         top: getRandomArbitrary(bounds.top + 1, bounds.bottom - ballSize.height - 1),
         left: getRandomArbitrary(bounds.left + 1, bounds.right - ballSize.width - 1),
         angle: getRandomArbitrary(10, 80),
-        speed: getRandomArbitrary(4, 6),
-        step: getRandomArbitrary(3, 4)
+        speed: getRandomArbitrary(5, 10),
+        step: getRandomArbitrary(4, 5)
       });
     }
 
