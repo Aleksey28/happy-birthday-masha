@@ -9,10 +9,11 @@
 }
 
 .title {
-  height: 320px;
+  height: auto;
   width: 992px;
   max-width: 80%;
   margin-top: -40px;
+  box-sizing: border-box;
 }
 
 .happyBirthday {
@@ -28,10 +29,12 @@
 }
 
 .masha {
+  box-sizing: border-box;
   width: 1024px;
-  height: 501px;
+  height: auto;
   max-width: 90%;
   margin: 0 0 20px;
+  z-index: 1;
 }
 
 .day {

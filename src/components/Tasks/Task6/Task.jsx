@@ -32,7 +32,7 @@ const successPopupProps = {
 
 const failPopupProps = {
   image: failImage,
-  title: 'Не правильно!',
+  title: 'Неправильно!',
   description: 'Попробуй еще раз',
   buttonText: 'Черт!',
   success: false,
@@ -84,7 +84,7 @@ function Task() {
 
   return (
     <div className={containerStyles.container}>
-            <audio ref={refPlayer} onLoadedMetadata={() => refPlayer.current.play()}>
+      <audio ref={refPlayer} loop onLoadedMetadata={() => refPlayer.current.play()}>
         <source src={accompaniment} type="audio/mpeg" />
       </audio>
       <Header {...headerProps} />
@@ -105,7 +105,7 @@ function Task() {
         <div className={styles.puzzle}>
           <img src={amImage} className={styles.puzzleImage} alt="Молоток чувак" />
           <div className={styles.puzzleTextContainer}>
-            <img src={amPuzzle} alt="Патамушта у шрифта нет такого языка рррррр" />
+            <img src={amPuzzle} className={styles.puzzleTextImage} alt="Патамушта у шрифта нет такого языка рррррр" />
             <p className={styles.puzzleText}>Есть машина,
               которая цены не имеет,
               но каждый ею владеет.</p>

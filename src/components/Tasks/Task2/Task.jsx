@@ -11,7 +11,7 @@ import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import videoLesha from './images/lesha.mp4';
 import videoSasha from './images/sasha.mp4';
-import accompaniment from '../../../sounds/track-task-1.mp3';
+import accompaniment from '../../../sounds/track-task-2.mp3';
 import { useRef } from 'react';
 
 const headerProps = {
@@ -30,7 +30,7 @@ const successPopupProps = {
 
 const failPopupProps = {
   image: failImage,
-  title: 'Не правильно!',
+  title: 'Неправильно!',
   description: 'Попробуй еще раз',
   buttonText: 'Черт!',
   success: false,
@@ -78,7 +78,7 @@ function Task() {
 
   return (
     <div className={containerStyles.container}>
-      <audio ref={refPlayer} onLoadedMetadata={() => refPlayer.current.play()}>
+      <audio ref={refPlayer} loop onLoadedMetadata={() => refPlayer.current.play()}>
         <source src={accompaniment} type="audio/mpeg" />
       </audio>
       <Header {...headerProps} />

@@ -34,6 +34,10 @@
   color: #242424;
 }
 
+.puzzleTextImage {
+  transform: translateX(-10px);
+}
+
 .puzzleResultContainer {
   display: flex;
   flex-direction: column;
@@ -66,6 +70,6 @@
 }
 
 .puzzleResultInputError {
-  border-color: red;
-  color: red
+  border-color: #DA4B6E;
+  color: #DA4B6E
 }

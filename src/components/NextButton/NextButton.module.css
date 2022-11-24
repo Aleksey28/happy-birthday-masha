@@ -10,21 +10,28 @@
 
 .button {
   cursor: pointer;
-  height: 90px;
-  width: 300px;
+  width: 255px;
+  height: 70px;
   border: none;
   border-radius: 45px;
   background: #4946FD;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  font-size: 32px;
-  line-height: 39px;
+  font-size: 24px;
+  line-height: 29px;
   color: #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
+}
+
+.buttonLarge {
+  width: 300px;
+  height: 90px;
+  font-size: 32px;
+  line-height: 39px;
 }
 
 .text {

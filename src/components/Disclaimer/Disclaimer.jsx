@@ -16,7 +16,7 @@ function Disclaimer() {
 
   return (
     <div className={styles.disclaimer}>
-      <audio ref={refPlayer} onLoadedMetadata={() => refPlayer.current.play()}>
+      <audio ref={refPlayer} loop onLoadedMetadata={() => refPlayer.current.play()}>
         <source src={accompaniment} type="audio/mpeg" />
       </audio>
       <div className={styles.title}>

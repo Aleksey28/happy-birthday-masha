@@ -25,17 +25,18 @@ function Intro() {
 
   return (
     <div className={styles.start}>
-      <audio ref={refPlayer} onLoadedMetadata={() => refPlayer.current.play()}>
+      <audio ref={refPlayer} loop onLoadedMetadata={() => refPlayer.current.play()}>
         <source src={accompaniment} type="audio/mpeg" />
       </audio>
+      {hearts.map((heartProps, index) => <Heart key={index} {...heartProps} />)}
+
       <img src={titleImage} className={styles.title} alt='С днем рождения симпапулька!' />
       <h2 className={styles.happyBirthday}>С Днем рождения, бусинка моя!</h2>
       <img src={mashaImage} className={styles.masha} alt='Это симпапулька!' />
       <p className={styles.day}>24 ноября 2022</p>
       <p className={styles.bestDay}>Самыйлучший день в году!</p>
-      <NextButton text={'УРА!'} onClick={handleClickNext} />
+      <NextButton text={'УРА!'} onClick={handleClickNext} large={true} />
 
-      {hearts.map((heartProps, index) => <Heart key={index} {...heartProps} />)}
     </div>
   );
 }

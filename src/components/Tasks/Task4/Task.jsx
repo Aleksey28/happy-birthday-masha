@@ -30,21 +30,13 @@ const successPopupProps = {
 
 const failPopupProps = {
   image: failImage,
-  title: 'Не правильно!',
+  title: 'Неправильно!',
   description: 'Попробуй еще раз',
   buttonText: 'Черт!',
   success: false,
 }
 
 const rightAnswer = '^у моей девушки день рождения$';
-
-const hearts = [
-  { top: 455, left: 496 },
-  { top: 146, left: 1145 },
-  { top: 405, left: 1335 },
-  { top: 723, left: 1360 },
-  { top: 120, left: 1735 },
-];
 
 function Task() {
   const refPlayer = useRef(null);
@@ -114,8 +106,6 @@ function Task() {
       </div>
       <NextButton text={'Готово'} onClick={handleClickNext} image={nextPreview} />
       <Popup {...getPopupProps()} visible={showPopup} onSubmit={handleSubmitPopup} />
-
-      {hearts.map((heartProps, index) => <Heart key={index} {...heartProps} />)}
     </div>
   );
 }
