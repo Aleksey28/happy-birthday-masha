@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/happy-birthday-masha/static/css/main.9ef9abcf.css",
+    "main.css": "/happy-birthday-masha/static/css/main.8df41896.css",
     "main.js": "/happy-birthday-masha/static/js/main.80fb4fab.js",
     "static/js/787.658d2654.chunk.js": "/happy-birthday-masha/static/js/787.658d2654.chunk.js",
     "static/media/sasha.mp4": "/happy-birthday-masha/static/media/sasha.451798e9e84852944d3b.mp4",
@@ -33,12 +33,12 @@
     "static/media/fail-icon.svg": "/happy-birthday-masha/static/media/fail-icon.8d0dd1926aa036edcaff2e006972ae66.svg",
     "static/media/success-icon.svg": "/happy-birthday-masha/static/media/success-icon.9f72d7cf418b78a72d32e53989f2adf7.svg",
     "index.html": "/happy-birthday-masha/index.html",
-    "main.9ef9abcf.css.map": "/happy-birthday-masha/static/css/main.9ef9abcf.css.map",
+    "main.8df41896.css.map": "/happy-birthday-masha/static/css/main.8df41896.css.map",
     "main.80fb4fab.js.map": "/happy-birthday-masha/static/js/main.80fb4fab.js.map",
     "787.658d2654.chunk.js.map": "/happy-birthday-masha/static/js/787.658d2654.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ef9abcf.css",
+    "static/css/main.8df41896.css",
     "static/js/main.80fb4fab.js"
   ]
 }
