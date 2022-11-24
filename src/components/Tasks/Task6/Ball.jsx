@@ -32,7 +32,7 @@ function Ball({id, top, left, angle, speed = 10, step = 1, size, bounds, handleC
     }, speed);
 
     setIntervalState(interval);
-  }, [size, bounds, speed]);
+  }, [size, bounds, speed, step]);
 
   function handleClick () {
     clearInterval(intervalState);
