@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/happy-birthday-masha/static/css/main.5ed95a41.css",
-    "main.js": "/happy-birthday-masha/static/js/main.06745376.js",
+    "main.js": "/happy-birthday-masha/static/js/main.43ca232f.js",
     "static/js/787.658d2654.chunk.js": "/happy-birthday-masha/static/js/787.658d2654.chunk.js",
     "static/media/sasha.mp4": "/happy-birthday-masha/static/media/sasha.451798e9e84852944d3b.mp4",
     "static/media/lesha.mp4": "/happy-birthday-masha/static/media/lesha.f2aa8447f8565618d62a.mp4",
@@ -22,7 +22,7 @@
     "static/media/am.png": "/happy-birthday-masha/static/media/am.2ce33356c1730b5910e7.png",
     "static/media/success-image-2.jpg": "/happy-birthday-masha/static/media/success-image-2.99c5dc7c79306e8e0b7a.jpg",
     "static/media/udm.png": "/happy-birthday-masha/static/media/udm.a4910a97af2bfd40dbbe.png",
-    "static/media/main.png": "/happy-birthday-masha/static/media/main.5f7ade3ead3a1fec24a5.png",
+    "static/media/main.png": "/happy-birthday-masha/static/media/main.abfb14bb839de8a99311.png",
     "static/media/success-image-1.jpg": "/happy-birthday-masha/static/media/success-image-1.aee938423c39c58f5a07.jpg",
     "static/media/fail-image-2.jpg": "/happy-birthday-masha/static/media/fail-image-2.7eedb000fecc570a123c.jpg",
     "static/media/fail-image-1.jpg": "/happy-birthday-masha/static/media/fail-image-1.abf879695c8525d35da4.jpg",
@@ -63,11 +63,11 @@
     "static/media/success-icon.svg": "/happy-birthday-masha/static/media/success-icon.9f72d7cf418b78a72d32e53989f2adf7.svg",
     "index.html": "/happy-birthday-masha/index.html",
     "main.5ed95a41.css.map": "/happy-birthday-masha/static/css/main.5ed95a41.css.map",
-    "main.06745376.js.map": "/happy-birthday-masha/static/js/main.06745376.js.map",
+    "main.43ca232f.js.map": "/happy-birthday-masha/static/js/main.43ca232f.js.map",
     "787.658d2654.chunk.js.map": "/happy-birthday-masha/static/js/787.658d2654.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5ed95a41.css",
-    "static/js/main.06745376.js"
+    "static/js/main.43ca232f.js"
   ]
 }
