@@ -32,6 +32,8 @@
 }
 
 .image {
-  border-radius: 45px;
+  border-radius: 90px;
   margin-bottom: 34px;
+  width: 180px;
+  height: 180px;
 }

@@ -2,14 +2,17 @@ import NextButton from '../../NextButton/NextButton';
 import Header from '../Header/Header';
 import containerStyles from '../Container.module.css';
 import styles from './Task.module.css';
-import nextPreview from '../images/next-preview.png';
-import failImage from '../images/fail-image.png';
+import nextPreview from './images/next-preview.jpg';
+import failImage from '../images/fail-image-1.jpg';
+import successImage from '../images/success-image-1.jpg';
 import popupBtnEmoji from './images/popup-btn-emoji.png';
 import resultEmoji from './images/result-emoji.png';
 import mainImage from './images/main.png';
 import Popup from '../Popup/Popup';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import accompaniment from '../../../sounds/track-task-3.mp3';
+import { useRef } from 'react';
 
 const headerProps = {
   title: 'Задание №3',
@@ -17,7 +20,7 @@ const headerProps = {
 }
 
 const successPopupProps = {
-  image: nextPreview,
+  image: successImage,
   title: 'Правильно!',
   description: 'Проводи больше времени за любимыми занятиями!',
   buttonText: 'Как мило',
@@ -36,6 +39,7 @@ const failPopupProps = {
 const rightAnswer = '^желаем не работать в огороде$';
 
 function Task() {
+  const refPlayer = useRef(null);
   const [answer, setAnswer] = useState('');
   const [showPopup, setShowPopup] = useState(false);
   const navigate = useNavigate();
@@ -74,6 +78,9 @@ function Task() {
 
   return (
     <div className={containerStyles.container}>
+            <audio ref={refPlayer} onLoadedMetadata={() => refPlayer.current.play()}>
+        <source src={accompaniment} type="audio/mpeg" />
+      </audio>
       <Header {...headerProps} />
       <div className={styles.task}>
         <img src={mainImage} className={styles.rebus} alt="Слабо?" />

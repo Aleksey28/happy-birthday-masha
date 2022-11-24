@@ -2,25 +2,30 @@ import NextButton from '../../NextButton/NextButton';
 import Header from '../Header/Header';
 import containerStyles from '../Container.module.css';
 import styles from './Task.module.css';
-import nextPreview from '../images/next-preview.png';
-import failImage from '../images/fail-image.png';
+import nextPreview from './images/next-preview.jpg';
+import failImage from '../images/fail-image-2.jpg';
+import successImage from '../images/success-image-2.jpg';
 import popupBtnEmoji from './images/popup-btn-emoji.png';
 import Popup from '../Popup/Popup';
 import { useNavigate } from 'react-router-dom';
-import { useEffect, useState } from 'react';
-import { v4 as uuidv4 } from 'uuid';
-import Ball from './Ball';
+import { useState } from 'react';
+import udmImage from './images/udm.png';
+import amImage from './images/am.png';
+import amPuzzle from './images/am-puzzle.png';
+import testString from '../../../utils/compare-strings';
+import accompaniment from '../../../sounds/track-task-6.mp3';
+import { useRef } from 'react';
 
 const headerProps = {
   title: 'Задание №6',
-  description: 'Настоящий волейболист поймает все 23 мяча!',
+  description: 'Отгадай удмуртскую и армянскую загадки.',
 }
 
 const successPopupProps = {
-  image: nextPreview,
-  title: 'Супер!',
-  description: 'Желаем поддерживать себя в форме и достигать целей!',
-  buttonText: 'Ну спасибо',
+  image: successImage,
+  title: 'Супер-пупер!',
+  description: 'Смотри иногда на мир под другим углом',
+  buttonText: 'Буду!',
   buttonEmoji: popupBtnEmoji,
   success: true,
 }
@@ -33,86 +38,83 @@ const failPopupProps = {
   success: false,
 }
 
-const bounds = {
-  top: 0,
-  left: 0,
-  bottom: window.innerHeight,
-  right: window.innerWidth,
-}
-
-const ballSize = {
-  width: 40,
-  height: 40,
-}
-
-function getRandomArbitrary(min, max) {
-  return Math.random() * (max - min) + min;
-}
+const rightAnswers = {
+  udm: 'груд',
+  am: 'сердце',
+};
 
 function Task() {
+  const refPlayer = useRef(null);
+  const [popupWasOpened, setPopupeWasOpend] = useState(false);
+  const [answers, setAnswers] = useState({ udm: '', am: '' });
+  // const [errors, setErrors] = useState({ udm: false, am: false })
   const [showPopup, setShowPopup] = useState(false);
   const navigate = useNavigate();
-  const [ballsCount, setBallsCount] = useState(10);
-  const [balls, setBalls] = useState([]);
-
-  useEffect(() => {
-    const initBallsCount = 23;
-    const initBalls = [];
-
-    for (let index = 0; index < initBallsCount; index++) {
-      initBalls.push({
-        id: uuidv4(),
-        top: getRandomArbitrary(bounds.top + 1, bounds.bottom - ballSize.height - 1),
-        left: getRandomArbitrary(bounds.left + 1, bounds.right - ballSize.width - 1),
-        angle: getRandomArbitrary(10, 80),
-        speed: getRandomArbitrary(1, 3),
-        step: getRandomArbitrary(1, 3)
-      });
-    }
-
-    setBalls(initBalls);
-    setBallsCount(initBallsCount);
-  }, [])
 
   function handleClickNext() {
     setShowPopup(true);
   }
 
-  function handleClickOnBall(id) {
-    setBallsCount(ballsCount - 1);
-    setBalls(balls.filter(ball => ball.id !== id));
+  function handleChangeInput(e, key) {
+    setAnswers((prev) => ({ ...prev, [key]: e.target.value }));
   }
 
   function handleSubmitPopup() {
+    setPopupeWasOpend(true);
     setShowPopup(false);
-    if (ballsCount <= 0)
-      navigate("/");
+    if (validAnswer())
+      navigate("/happy-end");
+  }
+
+  function validAnswer() {
+    const errors = {
+      udm: !testString(rightAnswers.udm, answers.udm),
+      am: !testString(rightAnswers.am, answers.am),
+    };
+
+    return !errors.am && !errors.udm;
   }
 
   function getPopupProps() {
-    if (ballsCount <= 0)
+    if (validAnswer())
       return successPopupProps;
 
     return failPopupProps;
   }
 
   return (
-    <div className={`${containerStyles.container} ${styles.field}`}>
+    <div className={containerStyles.container}>
+            <audio ref={refPlayer} onLoadedMetadata={() => refPlayer.current.play()}>
+        <source src={accompaniment} type="audio/mpeg" />
+      </audio>
       <Header {...headerProps} />
-      <div className="CatchBall">
-        {
-          balls.map((item) => <Ball
-            key={item.id}
-            id={item.id}
-            top={item.top}
-            left={item.left}
-            angle={item.angle}
-            speed={item.speed}
-            step={item.step}
-            bounds={bounds}
-            size={ballSize}
-            handleClickOnBall={handleClickOnBall} />)
-        }
+      <div className={styles.task}>
+        <div className={styles.puzzle}>
+          <img src={udmImage} className={styles.puzzleImage} alt="Молоток чувак" />
+          <div className={styles.puzzleTextContainer}>
+            <p className={styles.puzzleText}>Со котькуд кӧт,
+              нош ӝӧк вылэ поныны уг яра.</p>
+            <p className={styles.puzzleText}>Каждый ими питается,
+              а на стол положить нельзя.</p>
+          </div>
+          <div className={styles.puzzleResultContainer}>
+            <p className={styles.puzzleResultText}>Я знаю, ведь это очень легко, как ван, ту, сри:</p>
+            <input type="text" className={`${styles.puzzleResultInput} ${popupWasOpened && !testString(rightAnswers.udm, answers.udm) ? styles.puzzleResultInputError : ''}`} value={answers.udm} onChange={(e) => handleChangeInput(e, 'udm')} />
+          </div>
+        </div>
+        <div className={styles.puzzle}>
+          <img src={amImage} className={styles.puzzleImage} alt="Молоток чувак" />
+          <div className={styles.puzzleTextContainer}>
+            <img src={amPuzzle} alt="Патамушта у шрифта нет такого языка рррррр" />
+            <p className={styles.puzzleText}>Есть машина,
+              которая цены не имеет,
+              но каждый ею владеет.</p>
+          </div>
+          <div className={styles.puzzleResultContainer}>
+            <p className={styles.puzzleResultText}>Ну Леон точно поможет расколоть этот орешек:</p>
+            <input type="text" className={`${styles.puzzleResultInput} ${popupWasOpened && !testString(rightAnswers.am, answers.am) ? styles.puzzleResultInputError : ''}`} value={answers.am} onChange={(e) => handleChangeInput(e, 'am')} />
+          </div>
+        </div>
       </div>
       <NextButton text={'Готово'} onClick={handleClickNext} image={nextPreview} />
       <Popup {...getPopupProps()} visible={showPopup} onSubmit={handleSubmitPopup} />

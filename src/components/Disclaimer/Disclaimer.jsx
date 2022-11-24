@@ -1,10 +1,13 @@
 import styles from './Disclaimer.module.css';
 import NextButton from '../NextButton/NextButton';
 import startImage from './images/star.png';
-import nextPreview from './images/next-preview.png';
+import nextPreview from './images/next-preview.jpg';
 import { useNavigate } from 'react-router-dom';
+import accompaniment from '../../sounds/track-disclaimer.mp3';
+import { useRef } from 'react';
 
 function Disclaimer() {
+  const refPlayer = useRef(null);
   const navigate = useNavigate();
 
   function handleClickNext() {
@@ -13,6 +16,9 @@ function Disclaimer() {
 
   return (
     <div className={styles.disclaimer}>
+      <audio ref={refPlayer} onLoadedMetadata={() => refPlayer.current.play()}>
+        <source src={accompaniment} type="audio/mpeg" />
+      </audio>
       <div className={styles.title}>
         <img src={startImage} className={styles.star} alt="Звездочка" />
         <h2 className={styles.titleText}>ВНИМАНИЕ</h2>

@@ -1,56 +1,30 @@
 .start {
-  position: relative;
+  display: flex;
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  background-image: url(./background.jpg);
+  flex-direction: column;
 }
 
-.title {
-  height: 320px;
-  width: 992px;
-  max-width: 80%;
-  margin-top: -40px;
-}
-
-.happyBirthday {
-  font-family: 'Montserrat';
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: center;
-  color: #B6018E;
-  margin: -20px 0 0;
-  transform: translateY(-40px);
-}
-
-.masha {
-  width: 1024px;
-  height: 501px;
-  max-width: 90%;
-  margin: 0 0 20px;
-}
-
-.day {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 153.18%;
-  color: #B6018E;
-  margin: 0 0 10px;
-}
-
-.bestDay {
+.btn {
+  width: 500px;
+  height: 500px;
+  border: none;
+  border-radius: 250px;
+  cursor: pointer;
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 24px;
-  color: #B6018E;
-  margin: 0;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  color: #FFFFFF;
+  background: #B6018E;
+  margin-bottom: 100px;
 }
 
+.emoji {
+  height: 50px;
+  width: 170px;
+}

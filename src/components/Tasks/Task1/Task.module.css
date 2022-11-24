@@ -3,11 +3,29 @@
   justify-content: space-between;
 }
 
+.imageContainer {
+  position: relative;
+}
+
+.expandBtn {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  background-image: url(./images/expand-btn.png);
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+}
+
 .corgi {
   width: 1000px;
-  height: 692px;
+  height: auto;
   border: none;
   border-radius: 30px;
+  box-sizing: border-box;
 }
 
 .result {

@@ -2,8 +2,9 @@ import NextButton from '../../NextButton/NextButton';
 import Header from '../Header/Header';
 import containerStyles from '../Container.module.css';
 import styles from './Task.module.css';
-import nextPreview from '../images/next-preview.png';
-import failImage from '../images/fail-image.png';
+import nextPreview from './images/next-preview.jpg';
+import failImage from '../images/fail-image-2.jpg';
+import successImage from '../images/success-image-2.jpg';
 import popupBtnEmoji from './images/popup-btn-emoji.png';
 import playImage from './images/play.png';
 import stopImage from './images/pause.png';
@@ -19,7 +20,7 @@ const headerProps = {
 }
 
 const successPopupProps = {
-  image: nextPreview,
+  image: successImage,
   title: 'Правильно!',
   description: 'Желаем, чтобы душа пела и просилась в пляс!',
   buttonText: 'Так и есть',
@@ -63,7 +64,7 @@ function Task() {
   function handleSubmitPopup() {
     setShowPopup(false);
     if (validAnswer())
-      navigate("/task-6");
+      navigate("/task-5");
   }
 
   function handleClickPlay() {
