@@ -9,8 +9,8 @@
 
 .expandBtn {
   position: absolute;
-  right: 30px;
-  top: 30px;
+  right: 80px;
+  top: 0;
   width: 35px;
   height: 35px;
   background-color: transparent;
@@ -21,7 +21,7 @@
 }
 
 .corgi {
-  width: 1000px;
+  width: 90%;
   height: auto;
   border: none;
   border-radius: 30px;

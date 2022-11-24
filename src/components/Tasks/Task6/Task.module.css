@@ -8,11 +8,16 @@
   margin-bottom: 98px;
 }
 
-.puzzleImage {
+.puzzleImageContainer {
   width: 200px;
   height: 200px;
+  box-sizing: border-box;
   border-radius: 200px;
   margin-right: 65px;
+}
+
+.puzzleImage {
+  width: 100%;
 }
 
 .puzzleTextContainer {
@@ -36,6 +41,9 @@
 
 .puzzleTextImage {
   transform: translateX(-10px);
+  width: 100%;
+  min-width: 250px;
+  height: auto;
 }
 
 .puzzleResultContainer {

@@ -10,12 +10,14 @@
 }
 
 .video {
-  width: 400px;
-  height: 400px;
+  max-width: 400px;
+  min-width: 100px;
+  height: auto;
   border: none;
   border-radius: 200px;
   background-color: black;
   margin-right: 100px;
+  box-sizing: border-box;
 }
 
 .resultTitle {
@@ -29,7 +31,7 @@
 }
 
 .resultInput {
-  width: 920px;
+  width: 70%;
   height: 110px;
   background: rgba(217, 217, 217, 0.42);
   border: 1px solid #B6018E;

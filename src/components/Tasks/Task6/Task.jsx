@@ -90,7 +90,9 @@ function Task() {
       <Header {...headerProps} />
       <div className={styles.task}>
         <div className={styles.puzzle}>
-          <img src={udmImage} className={styles.puzzleImage} alt="Молоток чувак" />
+          <div className={styles.puzzleImageContainer}>
+            <img src={udmImage} className={styles.puzzleImage} alt="Молоток чувак" />
+          </div>
           <div className={styles.puzzleTextContainer}>
             <p className={styles.puzzleText}>Со котькуд кӧт,
               нош ӝӧк вылэ поныны уг яра.</p>
@@ -103,7 +105,9 @@ function Task() {
           </div>
         </div>
         <div className={styles.puzzle}>
-          <img src={amImage} className={styles.puzzleImage} alt="Молоток чувак" />
+          <div className={styles.puzzleImageContainer}>
+            <img src={amImage} className={styles.puzzleImage} alt="Молоток чувак" />
+          </div>
           <div className={styles.puzzleTextContainer}>
             <img src={amPuzzle} className={styles.puzzleTextImage} alt="Патамушта у шрифта нет такого языка рррррр" />
             <p className={styles.puzzleText}>Есть машина,
