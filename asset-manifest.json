@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/happy-birthday-masha/static/css/main.bdfe8350.css",
-    "main.js": "/happy-birthday-masha/static/js/main.caf13f19.js",
+    "main.css": "/happy-birthday-masha/static/css/main.5ed95a41.css",
+    "main.js": "/happy-birthday-masha/static/js/main.8afe9233.js",
     "static/js/787.658d2654.chunk.js": "/happy-birthday-masha/static/js/787.658d2654.chunk.js",
     "static/media/sasha.mp4": "/happy-birthday-masha/static/media/sasha.451798e9e84852944d3b.mp4",
     "static/media/lesha.mp4": "/happy-birthday-masha/static/media/lesha.f2aa8447f8565618d62a.mp4",
     "static/media/track-task-3.mp3": "/happy-birthday-masha/static/media/track-task-3.ac5101705df38e89a057.mp3",
     "static/media/track-task-1.mp3": "/happy-birthday-masha/static/media/track-task-1.36a22cfae5cb17a5a5a5.mp3",
     "static/media/main.jpg": "/happy-birthday-masha/static/media/main.5590c76ce9286b736e1f.jpg",
+    "static/media/track-task-2.mp3": "/happy-birthday-masha/static/media/track-task-2.4bd37a126e21e934ec4a.mp3",
     "static/media/track-task-5.mp3": "/happy-birthday-masha/static/media/track-task-5.366f8ee9faedad6dbdc1.mp3",
     "static/media/track-task-6.mp3": "/happy-birthday-masha/static/media/track-task-6.b325cbfae93462edc0fa.mp3",
     "static/media/track-happy-end.mp3": "/happy-birthday-masha/static/media/track-happy-end.fb1580d1817175167313.mp3",
@@ -26,6 +27,7 @@
     "static/media/main.png": "/happy-birthday-masha/static/media/main.c21e3bbfc605121356f3.png",
     "static/media/fail-image-1.jpg": "/happy-birthday-masha/static/media/fail-image-1.abf879695c8525d35da4.jpg",
     "static/media/common-photo.jpg": "/happy-birthday-masha/static/media/common-photo.9f453bf2a442e46bc799.jpg",
+    "static/media/open-sans-v34-latin_cyrillic-600.svg": "/happy-birthday-masha/static/media/open-sans-v34-latin_cyrillic-600.3d5351d0f1e0af7b27a0.svg",
     "static/media/am-puzzle.png": "/happy-birthday-masha/static/media/am-puzzle.479ace288a44a8cbfbc0.png",
     "static/media/emoji.png": "/happy-birthday-masha/static/media/emoji.b248e48c22b1bdda6390.png",
     "static/media/montserrat-v25-latin_cyrillic-600.svg": "/happy-birthday-masha/static/media/montserrat-v25-latin_cyrillic-600.b7a40d9c20fdd266bd24.svg",
@@ -36,14 +38,18 @@
     "static/media/montserrat-v25-cyrillic-500.ttf": "/happy-birthday-masha/static/media/montserrat-v25-cyrillic-500.edaf5d47c6a2c9836afa.ttf",
     "static/media/montserrat-v25-cyrillic-300.ttf": "/happy-birthday-masha/static/media/montserrat-v25-cyrillic-300.7a436bbc804182d424c7.ttf",
     "static/media/montserrat-v25-cyrillic-regular.ttf": "/happy-birthday-masha/static/media/montserrat-v25-cyrillic-regular.ab3c82024829cf5289db.ttf",
+    "static/media/open-sans-v34-latin_cyrillic-600.ttf": "/happy-birthday-masha/static/media/open-sans-v34-latin_cyrillic-600.0666885a7e23b8658608.ttf",
     "static/media/title.png": "/happy-birthday-masha/static/media/title.faf1ae86f2838bb37df1.png",
     "static/media/heart.png": "/happy-birthday-masha/static/media/heart.5a9818a26b2f885d2e3e.png",
     "static/media/result-emoji.png": "/happy-birthday-masha/static/media/result-emoji.32d6aa71ea7a750a5eb0.png",
+    "static/media/open-sans-v34-latin_cyrillic-600.woff": "/happy-birthday-masha/static/media/open-sans-v34-latin_cyrillic-600.6e9d302c7df1083c1d21.woff",
     "static/media/popup-btn-emoji.png": "/happy-birthday-masha/static/media/popup-btn-emoji.844af33f5286649342ec.png",
+    "static/media/open-sans-v34-latin_cyrillic-600.eot": "/happy-birthday-masha/static/media/open-sans-v34-latin_cyrillic-600.591095a6bff89d52acec.eot",
     "static/media/montserrat-v25-cyrillic-500.woff": "/happy-birthday-masha/static/media/montserrat-v25-cyrillic-500.f5df14caad6129be5955.woff",
     "static/media/montserrat-v25-cyrillic-regular.woff": "/happy-birthday-masha/static/media/montserrat-v25-cyrillic-regular.275156bc88fb38e6094d.woff",
     "static/media/montserrat-v25-latin_cyrillic-600.woff": "/happy-birthday-masha/static/media/montserrat-v25-latin_cyrillic-600.4edd74c91c8986a260a8.woff",
     "static/media/montserrat-v25-cyrillic-300.woff": "/happy-birthday-masha/static/media/montserrat-v25-cyrillic-300.5449a472689940c31677.woff",
+    "static/media/open-sans-v34-latin_cyrillic-600.woff2": "/happy-birthday-masha/static/media/open-sans-v34-latin_cyrillic-600.64eb508c2532924d9119.woff2",
     "static/media/montserrat-v25-cyrillic-500.eot": "/happy-birthday-masha/static/media/montserrat-v25-cyrillic-500.83fd96562b3bc8405cf6.eot",
     "static/media/montserrat-v25-latin_cyrillic-600.eot": "/happy-birthday-masha/static/media/montserrat-v25-latin_cyrillic-600.b0e3e940647c7aa24bea.eot",
     "static/media/montserrat-v25-cyrillic-regular.eot": "/happy-birthday-masha/static/media/montserrat-v25-cyrillic-regular.d05e9cce802e881f4352.eot",
@@ -56,12 +62,12 @@
     "static/media/fail-icon.svg": "/happy-birthday-masha/static/media/fail-icon.8d0dd1926aa036edcaff2e006972ae66.svg",
     "static/media/success-icon.svg": "/happy-birthday-masha/static/media/success-icon.9f72d7cf418b78a72d32e53989f2adf7.svg",
     "index.html": "/happy-birthday-masha/index.html",
-    "main.bdfe8350.css.map": "/happy-birthday-masha/static/css/main.bdfe8350.css.map",
-    "main.caf13f19.js.map": "/happy-birthday-masha/static/js/main.caf13f19.js.map",
+    "main.5ed95a41.css.map": "/happy-birthday-masha/static/css/main.5ed95a41.css.map",
+    "main.8afe9233.js.map": "/happy-birthday-masha/static/js/main.8afe9233.js.map",
     "787.658d2654.chunk.js.map": "/happy-birthday-masha/static/js/787.658d2654.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bdfe8350.css",
-    "static/js/main.caf13f19.js"
+    "static/css/main.5ed95a41.css",
+    "static/js/main.8afe9233.js"
   ]
 }
