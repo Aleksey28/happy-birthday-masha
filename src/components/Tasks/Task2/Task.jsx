@@ -55,7 +55,7 @@ function Task() {
   function handleSubmitPopup() {
     setShowPopup(false);
     if (validAnswer())
-      navigate("/task-3");
+      navigate("/riddle");
   }
 
   function validAnswer() {

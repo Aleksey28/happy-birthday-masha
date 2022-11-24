@@ -55,7 +55,7 @@ function Task() {
   function handleSubmitPopup() {
     setShowPopup(false);
     if (validAnswer())
-      navigate("/task-5");
+      navigate("/catch-balls");
   }
 
   function handleClickPlay() {

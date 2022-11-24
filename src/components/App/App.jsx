@@ -18,12 +18,12 @@ function App() {
         <Route exact path="/" element={<Start />} />
         <Route exact path="/intro" element={<Intro />} />
         <Route exact path="/disclaimer" element={<Disclaimer />} />
-        <Route exact path="/task-1" element={<Task1 />} />
-        <Route exact path="/task-2" element={<Task2 />} />
-        <Route exact path="/task-3" element={<Task3 />} />
-        <Route exact path="/task-4" element={<Task4 />} />
-        <Route exact path="/task-5" element={<Task5 />} />
-        <Route exact path="/task-6" element={<Task6 />} />
+        <Route exact path="/find-corgi" element={<Task1 />} />
+        <Route exact path="/lips-reading" element={<Task2 />} />
+        <Route exact path="/riddle" element={<Task3 />} />
+        <Route exact path="/vise-versa-song" element={<Task4 />} />
+        <Route exact path="/catch-balls" element={<Task5 />} />
+        <Route exact path="/enigma" element={<Task6 />} />
         <Route exact path="/happy-end" element={<HappyEnd />} />
       </Routes>
     </div>

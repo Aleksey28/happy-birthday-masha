@@ -89,7 +89,7 @@ function Task() {
   function handleSubmitPopup() {
     setShowPopup(false);
     if (ballsCount <= 0)
-      navigate("/task-6");
+      navigate("/enigma");
   }
 
   function getPopupProps() {

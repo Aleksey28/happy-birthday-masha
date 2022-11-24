@@ -11,7 +11,7 @@ function Disclaimer() {
   const navigate = useNavigate();
 
   function handleClickNext() {
-    navigate("/task-1");
+    navigate("/find-corgi");
   }
 
   return (

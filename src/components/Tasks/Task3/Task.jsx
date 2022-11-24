@@ -55,7 +55,7 @@ function Task() {
   function handleSubmitPopup() {
     setShowPopup(false);
     if (validAnswer())
-      navigate("/task-4");
+      navigate("/vise-versa-song");
   }
 
   function validAnswer() {
